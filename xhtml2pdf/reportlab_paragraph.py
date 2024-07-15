@@ -146,7 +146,7 @@ def imgVRange(h, va, fontSize):
         iyo = 0
     elif va in ("text-top", "top"):
         iyo = fontSize - h
-    elif va == "middle":
+    elif va in ("middle", "auto"):
         iyo = fontSize - (1.2 * fontSize + h) * 0.5
     elif va in ("text-bottom", "bottom"):
         iyo = fontSize - 1.2 * fontSize
